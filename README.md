@@ -1,5 +1,7 @@
 # Challenge-Starling
- 
+
+Thank you for a fun challenge
+
 - The flow:
   - GET - > Accounts 
     - function -> get the accountUUID and  CategoryUUID 
