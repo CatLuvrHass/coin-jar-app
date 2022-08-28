@@ -58,6 +58,11 @@ public class App{
 					String newGoalUid = GetSavingsGoal.UID(GetSavings.feed(accountUID, accessToken), index);
 					PutUpdateSavings.updateSavingsGoal(totalToTransfer, newGoalUid, accountUID, accessToken);
 					GetSavings.feed(accountUID, accessToken);
+					ArrayList<Integer> finalSavings = GetSavingsGoal.savingsPercentage(GetSavings.feed(accountUID, accessToken));
+					ArrayList<String> finalGoalList = GetSavingsGoal.goals(GetSavings.feed(accountUID, accessToken));
+					for(int i = 0; i < finalGoalList.size(); i++){
+						System.out.println("The current savings percentage for: " + finalGoalList.get(i) + " is: " + finalSavings.get(i) + "%");
+					}
 					System.exit(0);
 				case "new":
 					System.out.println("What is the name of your goal? eg. paris");

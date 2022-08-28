@@ -28,7 +28,19 @@ public class GetSavingsGoal {
         JSONObject savingsGoal = savingsGoalList.getJSONObject(index);
         return (String) savingsGoal.get("savingsGoalUid");
     }
-
+    /**
+     * returns: a list of savings
+     * */
+    public static ArrayList<Integer> savingsPercentage(String currentSavingGoals){
+        JSONObject object = new JSONObject(currentSavingGoals);
+        JSONArray savingsGoalList = object.getJSONArray("savingsGoalList");
+        ArrayList<Integer> savings = new ArrayList<>();
+        for (int i = 0; i < savingsGoalList.length(); i++) {
+            Integer saving = savingsGoalList.getJSONObject(i).getInt("savedPercentage");
+            savings.add(saving);
+        }
+        return savings;
+    }
     /**
      * returns: the sum of current saving in a particular goal + roundup value.
      * */
