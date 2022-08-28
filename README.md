@@ -1,27 +1,27 @@
 # Challenge-Starling
+ 
+- The flow:
+  - GET - > Accounts 
+    - function -> get the accountUUID and  CategoryUUID 
+  - GET -> Transaction of week 
+    - function -> RoundUp. 
+    - if no goal 
+  - PUT -> CREATES a GOAL 
+    - then 
+  - GET -> Gets the goal 
+    - function -> Adds up the current + roundup 
+  - PUT -> Confirm update the goal.
 
-``` the flow:
-GET - > Accounts
-function -> get the accountUUID and  CategoryUUID
-GET -> Transaction of week
-function -> RoundUp.
-if no goal
-PUT -> CREATES a GOAL
-then
-GET -> Gets the goal
-function -> Adds up the current + roundup
-PUT -> Confirm update the goal.
-```
 
 ## To run:
 - Run the main in App.
-- or directly run the jar file with ``mvn clean compile assembly:single`` then ``java -jar target/target/roundup-1.0-SNAPSHOT-jar-with-dependencies.jar``
-- if you're feeling lucky and fancy ``docker build -t roundup:latest .`` & ``docker run -t roundup:latest`` . this only worked a couple of times last night this morning it hangs, not sure why.
-    - Input your access Token to the terminal
-    - Create your goal if not exists
+- if you're feeling lucky and fancy ``mvn clean compile assembly:single`` then ``docker build -t roundup:latest .`` & ``docker run -it --pid=host roundup:latest``.
+- or directly run the jar file with ``mvn clean compile assembly:single`` then ``java -jar target/target/roundup-1.0-SNAPSHOT-jar-with-dependencies.jar``.
+
+    - Input your access Token to the terminal.
+    - Create your goal if not exists.
     - Confirm your transfer or Create a new goal.
     - save up.
-
 
 
 ## Mr Hindsight and some thoughts:
