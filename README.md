@@ -1,5 +1,5 @@
-# Round Up feature for savings
-
+## Java application feature for weekly savings
+### With Starling Bank api
 - The flow:
   - GET - > Accounts 
     - function -> get the accountUUID and  CategoryUUID 
