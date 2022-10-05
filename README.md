@@ -1,4 +1,4 @@
-# Starling Bank api exercise for a weekly round up feature
+# Starling Bank
 
 - The flow:
   - GET - > Accounts 
