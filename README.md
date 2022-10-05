@@ -1,4 +1,4 @@
-# Starling Bank
+# Round Up feature for savings
 
 - The flow:
   - GET - > Accounts 
