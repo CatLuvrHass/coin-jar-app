@@ -1,6 +1,4 @@
-# Challenge-Starling
-
-Thank you for a fun challenge
+# Starling Bank
 
 - The flow:
   - GET - > Accounts 
@@ -26,9 +24,8 @@ Thank you for a fun challenge
     - save up.
 
 
-## Mr Hindsight and some thoughts:
+## Future work:
 - Building models for each response would have made things a lot easier and more clear, rather than the data operations functions, perhaps.
-
-- Creating an interface for the requests and http connections might also clean this up more
+- Creating an interface for the requests and http connections might also clean this up more.
 - With more time, I could add more dealing with broken input from the user. Write tests. 
-- Persisting the data somehow into a database could allow for extra fun. Not sure if it is in the scope of the challenge to not allow the user to round up again and again, draining their bank account.
+- Persisting the data somehow into a database could allow for more functionality. To not allow the user to round up again and again, draining their bank account.
